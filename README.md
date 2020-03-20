@@ -33,3 +33,7 @@ Create .flaskenv, add parameters
    * top level class to hold KeyVals, e.g. security strings, db connections
 * routes.py module for all routing patterns
 * modify __init__.py, now only holds flask app variable, and references routes - builds up bigger file with seperation of concerns
+* Navigation Links
+   * `url_for` resolve links
+   * route() binds functions to 1+ URL patterns
+   * jinja delimiters
