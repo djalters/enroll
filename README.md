@@ -17,5 +17,15 @@ Create .flaskenv, add parameters
 003_createRunSimpleFlask
 `flask run` (in venv)
 * lazyloading
-* debug mode (default) refreshes
-* route paths
+* debug mode (default) rerenders changes to files on dev server
+* path routing via decorators
+
+004_createEnrollApp
+* application package/folder created
+   * main.py draws on application code - common pattern, e.g. node
+   * init.py, index required for each package, init allows initalisation
+   * templates folder (html jinja templates)
+   * static (static web files)
+* main.py
+   * moved main code into init.py for application
+   * set import in main, import app
