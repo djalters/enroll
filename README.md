@@ -25,7 +25,11 @@ Create .flaskenv, add parameters
    * main.py draws on application code - common pattern, e.g. node
    * init.py, index required for each package, init allows initalisation
    * templates folder (html jinja templates)
-   * static (static web files)
+   * static (static web files) with css and images folders
 * main.py
    * moved main code into init.py for application
    * set import in main, import app
+* config.py module
+   * top level class to hold KeyVals, e.g. security strings, db connections
+* routes.py module for all routing patterns
+* modify __init__.py, now only holds flask app variable, and references routes - builds up bigger file with seperation of concerns
