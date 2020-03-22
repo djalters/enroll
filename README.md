@@ -37,3 +37,10 @@ Create .flaskenv, add parameters
    * `url_for` resolve links - index function for endpoints, return a rendered page in this instance
    * route() binds functions to 1+ URL patterns
    * jinja delimiters
+
+005_workingWithTemplates
+* Jinja inheritance logic
+* create base template
+   * template inheritance creates child templates
+* pass data to view using props
+* access data via request/response objects
