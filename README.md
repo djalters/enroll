@@ -41,6 +41,9 @@ Create .flaskenv, add parameters
 005_workingWithTemplates
 * Jinja inheritance logic
 * create base template
-   * template inheritance creates child templates
+   * e.g. a file called 'base' or 'layout' which holds common page structure, naviagation etc
+   * these are imported and file content rendered within block statement
+* template inheritance creates child templates
+   * child templates for login, classes and register pages
 * pass data to view using props
 * access data via request/response objects
