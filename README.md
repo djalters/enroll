@@ -34,6 +34,6 @@ Create .flaskenv, add parameters
 * routes.py module for all routing patterns
 * modify __init__.py, now only holds flask app variable, and references routes - builds up bigger file with seperation of concerns
 * Navigation Links
-   * `url_for` resolve links
+   * `url_for` resolve links - index function for endpoints, return a rendered page in this instance
    * route() binds functions to 1+ URL patterns
    * jinja delimiters
