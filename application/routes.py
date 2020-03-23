@@ -1,5 +1,5 @@
 from application import app
-from flask import render_template
+from flask import render_template, request
 
 #root directory. URL routes can be defined here. Root/index will call/render this function
 @app.route("/")
@@ -31,3 +31,10 @@ def courses(term="Fall 2019"):
 @app.route("/register")
 def register():
     return render_template("index.html", register=True)
+
+@app.route("/enrollment")
+def enrollment():
+    id = request.args.get('courseID')
+    title = request.args.get('title')
+    term  = request.args.get('term')
+    return render_template("enrollment.html", enrollment=True, data = {"id":id, "title":title, "term":term})
