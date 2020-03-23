@@ -14,7 +14,18 @@ def login():
 
 @app.route("/courses")
 def courses():
-    return render_template("courses.html", courses=True)
+    #data source, this is one record, passed as props
+    courseData = [
+        {
+            "courseID": "5887463",
+            "title": "my course 10453",
+            "description": "my desc",
+            "credits": "100",
+            "term": "1"
+        }
+    ]
+
+    return render_template("courses.html", courses=True, courseData=courseData)
 
 @app.route("/register")
 def register():
