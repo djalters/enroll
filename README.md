@@ -46,8 +46,14 @@ Create .flaskenv, add parameters
 * template inheritance creates child templates
    * child templates for login, classes and register pages
 * pass data to view (templates) using props
-   * passing data from source to view
+   * passing data from source to view, e.g. 
+      * route function pass data to a page template in props
    * higlighting active menu item
+      * route function pass flag to page
+      * nested if statement within html element controls behaviour
    * for directive
    * course table with json dta
 * access data via request/response objects
+   * access query string (GET) url parameters
+      * request.args.get(<fieldname>)
+   * flask reponse object class flask.response

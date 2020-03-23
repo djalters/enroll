@@ -12,8 +12,9 @@ def index():
 def login():
     return render_template("login.html", login=True)
 
-@app.route("/courses")
-def courses():
+@app.route("/courses/")
+@app.route("/courses/<term>")
+def courses(term="Fall 2019"):
     #data source, this is one record, passed as props
     courseData = [
         {
@@ -25,7 +26,7 @@ def courses():
         }
     ]
 
-    return render_template("courses.html", courses=True, courseData=courseData)
+    return render_template("courses.html", courses=True, courseData=courseData, term=term)
 
 @app.route("/register")
 def register():
