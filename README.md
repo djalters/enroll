@@ -45,5 +45,9 @@ Create .flaskenv, add parameters
    * these are imported and file content rendered within block statement
 * template inheritance creates child templates
    * child templates for login, classes and register pages
-* pass data to view using props
+* pass data to view (templates) using props
+   * passing data from source to view
+   * higlighting active menu item
+   * for directive
+   * course table with json dta
 * access data via request/response objects
